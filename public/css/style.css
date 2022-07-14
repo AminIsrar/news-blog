@@ -1,0 +1,231 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  background-color: aqua;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.logo-area{
+  width: 100%;
+  background-color: #446A46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.navbar-area{
+  background-color: #73777B;
+}
+.main-menu{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-menu li a{
+  display: block;
+  color: #ffffff;
+  padding:14px;
+}
+.main-menu li a:hover{
+  background-color: #446A46;
+  color: #ffffff;
+}
+.container{
+  width: 80%;
+  margin: 0 10%;
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  column-gap: 30px;
+}
+.container .main-content{
+  background-color: #ffffff;
+  width: 70%;
+  padding: 20px;
+  border: 1px solid red;
+}
+.container .side-content{
+  width: 30%;
+  border: 1px solid green;
+  /* background-color: #ffffff; */
+  
+}
+.main-content .poat-container{
+  width:100%;
+  display: flex;
+  column-gap: 2%;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+}
+.poat-container .post-image{
+  width: 30%;
+}
+.poat-container .post-info{
+  width: 70%;
+}
+.post-info span{
+   display: inline-block;
+   margin: 5px 0;
+   padding: 0px 4px;
+}
+.post-info p{
+  margin-bottom: 30px;
+}
+.btn{
+  background-color: blue;
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  float: right;
+}
+ .btn:hover{
+  background-color: transparent;
+  color: blue;
+}
+.btn-small{
+  padding: 5px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.clear{
+  margin-bottom: 5px;
+ 
+}
+.side-content .search-area {
+  width: 80%;
+  margin: 0px auto;
+  position: relative;
+  height: 100px;
+  padding-top:5px ;
+}
+.search-area h2 {
+  color: blue;
+  margin-bottom: 17px;
+  border-left: 3px solid blue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.search-area form{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* box-sizing: border-box; */
+  /* border: 2px solid blue; */
+  
+}
+.search-area input[type="search"]{
+  width: 90%;
+  padding: 5px ;
+  outline: none;
+  border: 0;
+  border: 2px solid blue;
+  border-radius: 5px 0 0 5px;
+  border-right: 0;
+}
+.search-area input[type="submit"]{
+  width: 75px;
+  padding: 5px;
+  outline: none;
+  border: 0;
+  /* border-radius: 0px 5px 5px 0px; */
+  background-color: blue;
+  text-align: center;
+  color: #ffffff;
+ align-self: stretch;
+  /* border: none; */
+  border: 2px  solid blue;
+  border-radius: 0px 5px 5px 0;
+}
+.search-area input[type="submit"]:hover{
+  background-color: transparent;
+  color: blue;
+}
+.side-content .bg{
+  background-color: #ffffff;
+  height: 150px;
+}
+.latest-post{
+  margin-top: 30px;
+}
+.side-post-container{
+  padding: 10px;
+  background-color: #ffffff;
+}
+.padd{
+  display: flex;
+  width: 100%;
+  column-gap: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid green;
+}
+.side-post-container .side-post-image{
+  width: 30%;
+}
+.side-post-container .side-post-info{
+  width: 70%;
+}
+@media(max-width:900px){
+  .container{
+    flex-direction: column;
+  }
+  .container .side-content{
+    margin-top: 20px;
+    width: 70%;
+  }
+  .container .main-content{
+    margin: 15px auto;
+  }
+  .container .side-content{
+    margin: 15px auto;
+  }
+  .post-info p {
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+  .poat-container .post-image{
+    width: 30%;
+    align-self: flex-start;
+  }
+  
+}
+@media (max-width:768px) {
+  .container .main-content{
+    width: 100%;
+  }
+  .main-content .poat-container{
+    flex-direction: column;
+    width: 100%;
+  }
+  .poat-container .post-info {
+    width: 100%;
+}
+  .poat-container .post-image{
+    width: 100%;
+  }
+  .container .side-content{
+    width: 100%;
+  }
+  .container .side-post-info{
+    width: 100%;
+  }
+  
+}
